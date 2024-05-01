@@ -1,0 +1,14 @@
+.gridContainer {
+    font-size: 0;
+}
+
+.grid-item {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000000;
+    display: inline-block;
+    margin: 0;
+}
+form{
+    margin-bottom: 10px;
+}
