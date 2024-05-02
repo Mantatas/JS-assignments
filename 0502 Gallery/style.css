@@ -1,0 +1,15 @@
+.galleryCont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+.galleryCont img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}

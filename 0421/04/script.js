@@ -1,8 +1,3 @@
-// Parašykite JavaScript programą, kuri sukurtų naują eilutę iš duotos 
-// eilutės. Ši programa pašalina pirmąjį ir paskutinį eilutės simbolius, 
-// jei pirmasis arba paskutinis simbolis yra 'P'. Grąžinkite originalią 
-// eilutę, jei sąlyga nėra patenkinta.
-
 userString = prompt("Enter text")
 
 const firstChar = userString.charAt(0)
