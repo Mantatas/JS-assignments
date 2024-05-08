@@ -16,7 +16,13 @@ const books = [
 ];
 
 function countBooks(category) {
-    return books.filter(book => book.category === category).length;
+    let count = 0;
+    for (let i = 0; i < books.length; i++) {
+        if (books[i].category === category) {
+            count++;
+        }
+    }
+    return count;
 }
 
 function isNewBook(book) {
@@ -27,6 +33,5 @@ books.forEach(book => {
     console.log(`${book.title} (${book.category}) - ISBN: ${book.isbn}, Pages: ${book.pages}, Release Year: ${book.releaseYear}${isNewBook(book)}`);
 });
 
-console.log(`Total Fiction Books: ${countBooks('fiction')}`);
-console.log(`Total Non-Fiction Books: ${countBooks('non-fiction')}`);
-console.log(`Total Poetry Books: ${countBooks('poetry')}`);
+const category = prompt ('category?')
+console.log(`${category} kategorijos yra: ${countBooks(category)} knygu(-os)`);
