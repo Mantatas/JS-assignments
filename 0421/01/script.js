@@ -33,5 +33,6 @@ books.forEach(book => {
     console.log(`${book.title} (${book.category}) - ISBN: ${book.isbn}, Pages: ${book.pages}, Release Year: ${book.releaseYear}${isNewBook(book)}`);
 });
 
-const category = prompt ('category?')
-console.log(`${category} kategorijos yra: ${countBooks(category)} knygu(-os)`);
+console.log(`Total Fiction Books: ${countBooks('fiction')}`);
+console.log(`Total Non-Fiction Books: ${countBooks('non-fiction')}`);
+console.log(`Total Poetry Books: ${countBooks('poetry')}`);
